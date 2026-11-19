@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Etien Jasonson</title>
+<meta name="description" content="Etien Jasonson, interdisciplinary researcher in development studies">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --taupe: #b3a699;
+    --taupe-deep: #a09285;
+    --ink: #2f2a25;
+    --ink-soft: #4a423a;
+  }
+
+  * { box-sizing: border-box; }
+
+  html { background: var(--taupe); }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background: var(--taupe);
+    color: var(--ink);
+    font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+    line-height: 1.6;
+  }
+
+  .page {
+    max-width: 56rem;
+    margin: 0 auto;
+    padding: 4rem 1.5rem 5rem;
+    display: grid;
+    grid-template-columns: minmax(0, 30rem) 17rem;
+    column-gap: 2.5rem;
+    justify-content: start;
+    align-items: start;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: clamp(2.2rem, 5vw, 3.2rem);
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    line-height: 1.15;
+  }
+
+  .tag {
+    margin: 0.75rem 0 2.5rem;
+    font-family: "Newsreader", Georgia, "Times New Roman", serif;
+    font-size: 1.32rem;
+    font-style: italic;
+    color: var(--ink-soft);
+  }
+
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  nav a {
+    display: inline-block;
+    padding: 0.45rem 1.1rem;
+    border: 1px solid var(--ink);
+    color: var(--ink);
+    text-decoration: none;
+    font-size: 1rem;
+    background: transparent;
+  }
+
+  nav a:hover { background: var(--taupe-deep); }
+
+  nav a:focus-visible {
+    outline: 2px solid var(--ink);
+    outline-offset: 3px;
+  }
+
+  .paintings {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  .paintings img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  figcaption {
+    margin-top: 1.1rem;
+    font-size: 0.72rem;
+    line-height: 1.4;
+    color: var(--ink-soft);
+  }
+
+  @media (max-width: 40rem) {
+    .page {
+      grid-template-columns: 1fr;
+      row-gap: 3rem;
+      padding-top: 3rem;
+    }
+    .paintings { max-width: 17rem; }
+  }
+</style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <h1>Etien Jasonson</h1>
+      <p class="tag">interdisciplinary researcher in development studies</p>
+
+      <nav aria-label="Sections">
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="cooking.html">Cooking</a></li>
+          <li><a href="london/">London</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <figure class="paintings">
+      <img src="images/calle-jueves-1957.jpg" alt="Painting of a red building beside an iron gate, with a market stall draped in white cloth in the foreground">
+      <img src="images/calle-jueves-1961.jpg" alt="Loosely painted, abstracted version of the same street, in blocks of orange, red and grey">
+      <figcaption>Meki Megara, <em>Calle Jueves Sevilla 1957</em> (top) and <em>Calle Jueves Sevilla 1961</em> (bottom)</figcaption>
+    </figure>
+  </main>
+</body>
+</html>
